@@ -2,6 +2,7 @@ import java.util.*;
 
 public class NotenAuswertung {
     public static void main(String[] args) { 
+        
         try {
             notenAuswerten();
         } catch (Exception ex) {
@@ -18,6 +19,7 @@ public class NotenAuswertung {
         int[] noten = new int[anzahl]; 
         int[] anzahlProNote = new int[6]; 
         double summe = 0.0; 
+
         for (int i = 0; i < anzahl; i++) { 
             System.out.print("Geben Sie bitte die  " + (i+1) + ".Note ein:");
             noten[i]= input.nextInt();
@@ -32,6 +34,7 @@ public class NotenAuswertung {
         }
         summe = summe + noten[i];
     }
+
     double durchschnitt = summe / anzahl;
     System.out.println("In der Klassenarbeit wurden " + anzahlProNote[0] + " Einsen geschrieben");
     System.out.println("In der Klassenarbeit wurden " + anzahlProNote[1] + " Zweien geschrieben"); 
