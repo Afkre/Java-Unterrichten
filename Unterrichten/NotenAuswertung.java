@@ -40,5 +40,7 @@ public class NotenAuswertung {
     System.out.println("In der Klassenarbeit wurden " + anzahlProNote[4] + " Fünfen geschrieben");
     System.out.println("In der Klassenarbeit wurden " + anzahlProNote[5] + " Sechsen geschrieben");
     System.out.println("Der Notendurchschnitt ist: " + durchschnitt);
+
+    input.close();
     }
 }
